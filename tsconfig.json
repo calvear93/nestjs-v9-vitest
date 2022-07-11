@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "outDir": "dist",
+        "paths": {
+            "@app/*": ["app/*"],
+            "@libs/*": ["libs/*"],
+            "@http": ["libs/http"],
+            "@time": ["libs/time"],
+            "@crypto": ["libs/crypto"],
+            "@common/*": ["libs/utils/*", "libs/decorators/*"]
+        },
+
+        "target": "es2022",
+        "module": "es2022",
+        "moduleResolution": "node16",
+        "resolveJsonModule": true,
+
+        "allowJs": true,
+        "checkJs": true,
+
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        "composite": false,
+        "incremental": true,
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+        "removeComments": true,
+
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "importHelpers": true,
+        "skipLibCheck": true,
+        "downlevelIteration": false,
+
+        "strict": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false
+    },
+    "include": ["src/**/*", "vitest.config.ts"]
+}

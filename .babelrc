@@ -1,0 +1,17 @@
+{
+    "plugins": [
+        ["minify-constant-folding"],
+        [
+            "minify-dead-code-elimination",
+            {
+                "optimizeRawSize": true
+            }
+        ],
+        [
+            "transform-inline-environment-variables",
+            {
+                "exclude": ["HOSTNAME", "NODE_VERSION"]
+            }
+        ]
+    ]
+}
