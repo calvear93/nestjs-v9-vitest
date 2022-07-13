@@ -3,10 +3,12 @@ import check from 'vite-plugin-checker';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-    root: 'src',
     test: {
         silent: true,
+        coverage: {
+            reporter: ['text', 'text-summary']
+        },
         reporters: ['verbose']
     },
-    plugins: [check.default({ typescript: true }), tsconfigPaths()]
+    plugins: [check({ typescript: true }), tsconfigPaths()]
 });

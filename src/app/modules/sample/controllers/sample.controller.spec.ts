@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, test } from 'vitest';
 import { Test } from '@nestjs/testing';
-import { SampleService } from '../services/sample.service.js';
-import { SampleController } from './sample.controller.js';
+import { SampleService } from '../services/sample.service';
+import { SampleController } from './sample.controller';
 
 describe('SampleController', () => {
     // controller instance

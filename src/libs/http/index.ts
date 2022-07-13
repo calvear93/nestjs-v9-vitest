@@ -1,1 +1,1 @@
-export { HttpProvider } from './http.provider.js';
+export { HttpProvider } from './http.provider';

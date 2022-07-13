@@ -1,6 +1,6 @@
 import { Controller, Get, VERSION_NEUTRAL } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { HealthCheckResult } from './models/health-check-result.js';
+import { HealthCheckResult } from './models/health-check-result';
 
 /**
  * Health check controller using Terminus.

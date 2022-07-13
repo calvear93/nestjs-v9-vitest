@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { SampleService } from '../services/sample.service.js';
+import { SampleService } from '../services/sample.service';
 
 /**
  * Sample controller.

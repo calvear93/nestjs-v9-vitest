@@ -1,7 +1,16 @@
-import { afterAll, afterEach, beforeAll, describe, expect, Mock, test, vi } from 'vitest';
+import {
+    afterAll,
+    afterEach,
+    beforeAll,
+    describe,
+    expect,
+    Mock,
+    test,
+    vi
+} from 'vitest';
 import nock from 'nock';
 import { Test, TestingModule } from '@nestjs/testing';
-import { AxiosInterceptorConfig, HttpProvider } from './http.provider.js';
+import { AxiosInterceptorConfig, HttpProvider } from './http.provider';
 
 describe('HttpProvider', () => {
     // module instance

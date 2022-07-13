@@ -1,7 +1,7 @@
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { swaggerInit } from './app/config/swagger.config.js';
-import { MainModule } from './app/main.module.js';
+import { swaggerInit } from 'app/config';
+import { MainModule } from 'app/main.module';
 
 /**
  * Initializes the app.
@@ -19,7 +19,7 @@ async function bootstrap(): Promise<void> {
         })
     );
 
-    if (process.env.ENV !== 'prod') swaggerInit(app);
+    if (process.env.SWAGGER_UI === 'true') swaggerInit(app);
 
     await app.listen(+process.env.PORT);
 }

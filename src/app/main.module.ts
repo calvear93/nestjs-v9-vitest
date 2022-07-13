@@ -1,5 +1,5 @@
 import { Logger, Module } from '@nestjs/common';
-import { HealthModule, SampleModule } from './modules/index.js';
+import { HealthModule, SampleModule } from 'app/modules';
 
 /**
  * Main module containing every app submodules.

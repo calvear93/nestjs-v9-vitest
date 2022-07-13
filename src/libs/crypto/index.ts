@@ -1,1 +1,1 @@
-export * from './crypto.provider.js';
+export * from './crypto.provider';

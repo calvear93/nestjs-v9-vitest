@@ -1,9 +1,8 @@
 import { Injectable, Provider } from '@nestjs/common';
-import * as axios from 'axios';
-import {
-    type AxiosRequestConfig,
+import axios, {
     AxiosError,
     AxiosInstance,
+    AxiosRequestConfig,
     AxiosResponse
 } from 'axios';
 
