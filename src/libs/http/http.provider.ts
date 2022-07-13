@@ -1,8 +1,9 @@
 import { Injectable, Provider } from '@nestjs/common';
-import axios, {
+import axios from 'axios';
+import {
     AxiosError,
     AxiosInstance,
-    AxiosRequestConfig,
+    type AxiosRequestConfig,
     AxiosResponse
 } from 'axios';
 
@@ -78,7 +79,7 @@ export class HttpProvider {
         config?: AxiosRequestConfig,
         interceptors?: AxiosInterceptorConfig
     ) {
-        this._client = axios.create(config);
+        this._client = axios.default.create(config);
 
         if (interceptors) {
             const { request, response } = interceptors;

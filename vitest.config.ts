@@ -4,6 +4,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
     test: {
+        environment: 'node',
         silent: true,
         coverage: {
             reporter: ['text', 'text-summary']

@@ -1,7 +1,7 @@
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { swaggerInit } from 'app/config';
-import { MainModule } from 'app/main.module';
+import { swaggerInit } from './app/config/index.js';
+import { MainModule } from './app/main.module.js';
 
 /**
  * Initializes the app.

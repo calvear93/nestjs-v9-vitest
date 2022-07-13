@@ -10,7 +10,7 @@ import {
 } from 'vitest';
 import nock from 'nock';
 import { Test, TestingModule } from '@nestjs/testing';
-import { AxiosInterceptorConfig, HttpProvider } from './http.provider';
+import { AxiosInterceptorConfig, HttpProvider } from './http.provider.js';
 
 describe('HttpProvider', () => {
     // module instance

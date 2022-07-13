@@ -1,1 +1,1 @@
-export * from './epoch.util';
+export * from './epoch.util.js';
